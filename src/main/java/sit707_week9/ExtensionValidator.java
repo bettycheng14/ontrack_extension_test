@@ -14,12 +14,10 @@ public class ExtensionValidator {
         if (reason.length() < 15) {
         	return "The reason must be at least 15 characters long";
         }
-        
         // Date not before due date
         if (requestedDate.isBefore(dueDate)) {
             return "Due date too early";
         }
-        
         // Date not after 7 days from due date
         long daysBetween = ChronoUnit.DAYS.between(dueDate, requestedDate);
         if (daysBetween > 6) {

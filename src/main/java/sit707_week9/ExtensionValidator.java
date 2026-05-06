@@ -6,6 +6,6 @@ import java.time.temporal.ChronoUnit;
 public class ExtensionValidator {
 	    
     public static String submitRequest(String reason, LocalDate dueDate, LocalDate requestedDate) {
-
+    	return null;
     }
 }

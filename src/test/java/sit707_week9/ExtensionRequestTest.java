@@ -62,7 +62,7 @@ public class ExtensionRequestTest {
     public void testDateBeyondSevenDays() {
         String testName = "testDateBeyondSevenDays";
         String reason = "I need more time to finish this.";
-        LocalDate requestedDate = dueDate.plusDays(8);
+        LocalDate requestedDate = dueDate.plusDays(7);
         
         String status = ExtensionValidator.submitRequest(reason, dueDate, requestedDate);
         

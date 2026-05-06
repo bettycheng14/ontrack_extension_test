@@ -18,7 +18,7 @@ public class ExtensionValidator {
         if (requestedDate.isBefore(dueDate)) {
             return "Due date too early";
         }
-        // Date not after 7 days from due date
+        // Date not after 6 days from due date
         long daysBetween = ChronoUnit.DAYS.between(dueDate, requestedDate);
         if (daysBetween > 6) {
             return "Due date too late";
